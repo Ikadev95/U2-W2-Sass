@@ -1,11 +1,17 @@
 nav{
     display: flex;
-    gap: 8px;
+    gap: 20px;
+    align-items: center;
 }
 nav ul{
     display: flex;
-    gap: 8px;
+    gap: 16px;
 }
 nav img{
     height: 40px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    @extend .p;
 }

@@ -32,7 +32,7 @@ ul {
   font-size: 1.563rem;
 }
 
-.text-6 {
+.text-6, nav a {
   font-size: 1.25rem;
 }
 
@@ -229,7 +229,8 @@ button {
 
 nav {
   display: flex;
-  gap: 8px;
+  gap: 20px;
+  align-items: center;
 }
 
 nav ul {
@@ -239,4 +240,9 @@ nav ul {
 
 nav img {
   height: 40px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
