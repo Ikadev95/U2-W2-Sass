@@ -235,11 +235,11 @@ nav {
 
 nav ul {
   display: flex;
-  gap: 8px;
+  gap: 16px;
 }
 
 nav img {
-  height: 40px;
+  height: 70px;
 }
 
 nav a {

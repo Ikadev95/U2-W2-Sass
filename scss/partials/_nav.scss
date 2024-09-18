@@ -8,10 +8,10 @@ nav ul{
     gap: 16px;
 }
 nav img{
-    height: 40px;
+    height: 70px;
 }
 nav a{
     color: black;
     text-decoration: none;
-    @extend .p;
+    @extend .text-6;
 }
