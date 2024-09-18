@@ -1,0 +1,23 @@
+$my-sizes-map: (
+  'sm' : 8px,
+  'normal' : 16px,
+  'md' : 24px,
+  'lg' : 32px,
+  'xl' : 40px,
+  'xxl' : 48px,
+);
+
+@each $size, $value in $my-sizes-map {
+    .pi-#{$size} {
+      padding-inline: $value;
+    }
+    .pb-#{$size} {
+        padding-block: $value;
+    }
+    .mi-#{$size} {
+        margin-inline: $value;
+    }
+    .mb-#{$size} {
+        margin-block: $value;
+    }
+  }

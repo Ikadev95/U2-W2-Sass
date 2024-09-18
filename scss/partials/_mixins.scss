@@ -1,0 +1,13 @@
+@mixin floating ($border, $shadow, $radius){
+    border: $border;
+    box-shadow: 5px 5px 23px $shadow #808080;
+    border-radius: $radius;
+}
+@mixin grid ($num){
+    display: flex;
+    flex-wrap: wrap;
+    & > * {
+        flex: 0 0 calc(100% / #{$num});
+      }
+      
+}

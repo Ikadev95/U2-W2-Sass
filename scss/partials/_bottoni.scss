@@ -1,0 +1,12 @@
+@each $color, $value in $btn-col-map {
+    .bgColor-#{$color} {
+      background-color: $value;
+    }
+  }
+
+@mixin buttonStyle (){
+    border: 0;
+    @extend .pb-sm;
+    @extend .pi-sm;
+    color: $text-color;
+}

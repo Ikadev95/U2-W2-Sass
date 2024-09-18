@@ -1,0 +1,9 @@
+.container{
+    @include grid(4);
+    
+}
+.container img{
+    object-fit: cover;
+    width: 100%;
+    @include floating (0,-3,8px)
+}

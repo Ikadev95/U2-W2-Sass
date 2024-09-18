@@ -1,10 +1,18 @@
 header{
+    font-family: "Kalnia", serif;
     background-color: $bg_hero-color;
     color: $text-color;
     display: flex;
     height: 400px;
 }
-img{
+header img{
     height: 400px;
     object-fit: cover;
+}
+h1 {
+    @include HeadingStyle();
+  }
+
+button{
+    @include buttonStyle();
 }
