@@ -9,4 +9,5 @@
     @extend .pb-sm;
     @extend .pi-sm;
     color: $text-color;
+    @include floating (0,-7px,4px)
 }

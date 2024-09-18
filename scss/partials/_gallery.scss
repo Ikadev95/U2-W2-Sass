@@ -1,9 +1,10 @@
 .container{
     @include grid(4);
+    @include animation('fadeInUp1', 1s, '-50px', '0px', 0.5s);
     
 }
 .container img{
     object-fit: cover;
     width: 100%;
-    @include floating (0,-3,8px)
+    @include floating (0,-3px,0)
 }

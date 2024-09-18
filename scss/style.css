@@ -162,6 +162,20 @@ header {
   color: #f4f4f4;
   display: flex;
   height: 400px;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY("-50px");
+  }
+  to {
+    opacity: 1;
+    transform: translateY("0px");
+  }
 }
 
 header img {
@@ -177,21 +191,52 @@ h1 {
 button {
   border: 0;
   color: #f4f4f4;
+  border: solid 0 black;
+  box-shadow: 5px 5px 23px -7px #808080;
+  border-radius: 4px;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
+  animation-name: fadeInUp1;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
 }
 .container > * {
   flex: 0 0 calc(100% / 4);
+}
+@keyframes fadeInUp1 {
+  from {
+    opacity: 0;
+    transform: translateY("-50px");
+  }
+  to {
+    opacity: 1;
+    transform: translateY("0px");
+  }
 }
 
 .container img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  border: 0;
-  box-shadow: 5px 5px 23px -3 #808080;
-  border-radius: 8px;
+  border: solid 0 black;
+  box-shadow: 5px 5px 23px -3px #808080;
+  border-radius: 0;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+}
+
+nav ul {
+  display: flex;
+  gap: 8px;
+}
+
+nav img {
+  height: 40px;
 }/*# sourceMappingURL=style.css.map */

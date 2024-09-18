@@ -1,5 +1,5 @@
 @mixin floating ($border, $shadow, $radius){
-    border: $border;
+    border: solid $border black;
     box-shadow: 5px 5px 23px $shadow #808080;
     border-radius: $radius;
 }
@@ -11,3 +11,22 @@
       }
       
 }
+
+@mixin animation($name, $duration: 1s, $start: 0px, $end: 20px, $delay: 0s) {
+    @keyframes #{$name} {
+      from {
+        opacity: 0;
+        transform: translateY($start);
+      }
+      to {
+        opacity: 1;
+        transform: translateY($end);
+      }
+    }
+  
+    animation-name: #{$name};
+    animation-duration: $duration;
+    animation-delay: $delay;
+    animation-fill-mode: forwards;
+  }
+  
